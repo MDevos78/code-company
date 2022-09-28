@@ -1,0 +1,540 @@
+@font-face {
+    font-family: 'robotobold';
+    src: url('roboto-bold-webfont.woff2') format('woff2'),
+         url('roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotolight';
+    src: url('roboto-light-webfont.woff2') format('woff2'),
+         url('roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotomedium';
+    src: url('roboto-medium-webfont.woff2') format('woff2'),
+         url('roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url('roboto-regular-webfont.woff2') format('woff2'),
+         url('roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+body{
+    font-family: 'robotoregular', Arial, sans-serif; 
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*header*/
+
+header{
+    display: flex;
+    background-color: rgb(9, 51, 72, 255);
+    height: 6rem;
+    max-width: 1920px;
+    justify-content: space-between;
+    align-items: center;
+    }
+#pinceau{
+    background: rgb(17, 57, 78, 255);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;    
+    border:2px solid rgb(52, 84, 100, 255); 
+    margin-left: 3rem;
+  }
+#pinceau img{
+    max-height: 100%;
+    max-width: 100%;
+    margin-top: 12px;
+   }
+
+nav{
+    display: none;
+}
+.bar1{
+    width: 2rem;
+    height: 2px;
+    margin-bottom: 1rem;
+    background: #cdcdcd;
+    margin-right: 3rem;
+    margin-top: 1rem;
+}
+.bar2{
+    width: 2rem;
+    height: 2px;
+    margin-bottom: 1rem;
+    background: #cdcdcd;
+    margin-right: 3rem;
+}
+.bar3{
+    width: 2rem;
+    height: 2px;
+    margin-bottom: 1rem;
+    background: #cdcdcd;
+    margin-right: 3rem;
+}
+@media screen and (min-width:768px)
+{
+    .bar1,.bar2,.bar3{
+        display: none;
+    }
+    nav{
+        display: inline;
+        height: 6rem;
+        width: 80%;
+    }
+    nav ul{
+        list-style: none;
+    }
+    nav li{
+        height: auto;
+        float: right;
+        text-align: center;
+        padding-top: 2.5rem;
+    }
+    nav a{
+        padding: 1rem;
+        color: white; 
+        text-decoration: none;  
+    }
+    nav a:hover{
+        color: rgb(81, 122, 143, 255);
+        background-color: rgb(31, 69, 89, 255);
+        border-radius: 5px;
+    }
+    .con::before{
+        content: "|";
+        margin: 0 2rem;
+    }
+    .port::before{
+        content: "|";
+        margin: 0 2rem;
+    }
+    .our::before{
+        content: "|";
+        margin: 0 2rem;
+    }
+}
+@media screen and (min-width:1920px)
+{
+    #pinceau{
+        margin-left: 24rem;
+    }
+    nav{
+        margin-right: 15rem;
+        width: 50%;
+    }
+}
+/*jumbotron*/
+
+.jumbotron{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 32rem;
+    width: auto;
+    background-image: url('img/jumbotron.jpg');
+    background-position: center;
+    color: white;
+}
+h1{
+    font-size: 48px;
+    letter-spacing: -1px;
+    font-family: 'robotobold', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding:0 9rem 0 9rem;
+    
+}
+h3{
+    font-size: 1.2rem;
+    font-family: 'robotolight', Arial, sans-serif; 
+    font-weight: 100;
+}
+hr{
+    width: 80%;
+    border: 1px solid white;
+}
+.jumbotron p{
+    height: 4rem;
+    width: 36rem;
+    font-family: 'robotolight', Arial, sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+.button{
+    background-color: rgb(49, 94,117,255);
+    color: white;
+    height: 3rem;
+    width: 18rem;
+    border-radius: 25px;
+    border: 2px solid white;
+}
+.button:hover{
+    background-color: white;
+    color: rgb(9, 51, 72, 255);
+    border: 2px solid rgb(9, 51, 72, 255);
+}
+@media screen and (min-width:768px)
+{
+    h1{
+        padding: 0;
+    }  
+}
+@media screen and (min-width:1920px)
+{
+    hr{
+        width: 50%;
+    }    
+}
+
+
+/* container*/
+
+.container{
+    background-color: white;
+    height: 77rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(13, 65, 92, 255);
+}
+h2{
+    margin: 5rem 0 1rem 0;
+    display: block;
+    height: 6rem;
+    width: 32rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600; 
+}
+.team1{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.team1 img{
+    padding-bottom: 1rem;
+}
+.team1 h3{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.team2{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.team2 img{
+    padding-bottom: 1rem;
+}
+.team2 h3{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.team3{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.team3 img{
+    padding-bottom: 1rem;
+}
+.team3 h3{
+    text-align: center;
+}
+.container hr{
+    width: 80%;
+    border: 1px solid rgb(13, 65, 92, 255);
+    margin-bottom: 2rem;
+}
+.pcontainer{
+    height: 6rem;
+    width: 32rem;
+    display: block;
+    text-align: center;
+}
+
+@media screen and (min-width:768px)
+{
+    .container{
+        height: 42rem;
+    }
+    .team{
+        display: flex;
+    }
+    .team2{
+        padding: 0 4rem;
+    }
+    .team p{
+        font-size: .75rem;
+    }
+    .team3 h3{
+        padding-bottom: 1rem;
+    }
+}
+@media screen and (min-width:992px)
+{
+    .container{
+        height: 39rem;
+    }
+    h2{
+        height: 2rem;
+        width: 62rem;
+        margin: 4rem 0 3rem 0;
+    }
+}
+
+/* portfolio */
+
+.portfolio{
+    height: 58rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(62, 173, 135, 255);
+    color: white;
+    padding: 0 2rem;
+}
+.portfolio h2{
+    padding: 0 5.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 3rem ;
+}
+.portfolio p{
+    margin-top: 2rem;
+}
+.iport {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 3rem;
+    column-gap: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 4.5rem;
+}
+.iport img:hover{
+    opacity: 0.5;
+}
+.pbutton{
+    background-color: rgb(62, 173, 135, 255);
+    color: white;
+    height: 3rem;
+    width: 18rem;
+    border-radius: 25px;
+    border: 2px solid white;
+}
+.pbutton:hover{
+    background-color: white;
+    color: rgb(62, 173, 135, 255);
+    border: 2px solid rgb(62, 173, 135, 255);
+}
+
+@media screen and (min-width:768px)
+{
+    .portfolio{
+        height: 55rem;
+    }
+    .portfolio h2{
+        padding: 0;
+    }
+    .portfolio p{
+        margin-top: 0;
+    }
+    .iport{
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+}
+@media screen and (min-width:992px)
+{
+    .portfolio{
+        height: 52rem;
+    }
+    .iport{
+        padding-left: 14rem;
+        padding-right: 14rem;
+    }
+}
+@media screen and (min-width:1216px)
+{
+    .portfolio{
+        height: 39rem;
+    }
+    .iport{
+        width: 1200px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .iport img[alt~=portfolio2]{
+        padding-right: 4rem;
+    }
+    .portfolio p{
+        padding-bottom: 1.5rem;
+    }
+}
+
+/* contact */
+
+.contact{
+    height: 41rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(34, 49, 57, 255);
+    color: white;
+    padding: 0 2rem;
+}
+.contact h2{
+    display: block;
+    height: 6rem;
+    width: 26rem;
+    margin-bottom: 0;
+}
+.contact p{
+    margin-bottom: 3rem;
+}
+form{
+    height: 17rem;
+    width: 30rem;
+    display: block;
+    margin: 0 auto;
+   
+}
+#nom{
+    height: 3rem;
+    width: 30rem;
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+}
+#email{
+    height: 3rem;
+    width: 30rem;
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+}
+#message{
+    height: 9rem;
+    width: 30rem;
+    text-align: center;
+    border-radius: 25px;
+}
+.cbutton{
+    margin-top: 2rem;
+    height: 3rem;
+    width: 18rem;
+    border-radius: 25px;
+    background-color: rgb(34, 49, 57, 255);
+    color: white;
+    border: 1px solid white;
+    font-size: 1rem;
+}
+.cbutton:hover{
+    background-color: white;
+    color: rgb(34, 49, 57, 255);
+    border: 2px solid white;
+}
+@media screen and (min-width:992px)
+{
+    .contact{
+        height: 39rem;
+    }
+    .contact h2{
+        width: 50rem;
+        height: 3rem;
+    }
+}
+
+/* footer */
+
+footer{
+    background-color: rgb(34, 49, 57, 255);
+    height: 8rem;
+    color: white;
+}
+footer hr{
+    width: 80%;
+    margin: 0 auto;
+}
+footer img{
+    padding: 0 0.5rem;
+}
+footer img:hover{
+    width:70px;
+    height:50px;
+    opacity: 1;
+}
+.follow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.follow p{
+    font-family: 'robotolight', Arial, sans-serif;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.footer{
+    text-align: center;
+    font-weight: 100;
+    font-size: .9rem;
+}
+@media screen and (min-width:992px)
+{
+    footer{
+        height: 6rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer hr{
+        height: 0;
+    }
+    .footer{
+        margin-left: 100px;
+        padding-top: 3rem;
+        padding-right: 1rem;
+    }
+    .follow{
+        padding-left: 2rem;
+    }
+}
+@media screen and (min-width:1216px)
+{
+    .footer{
+        margin-left: 300px;
+        padding-right: 1rem;
+    }
+}
+@media screen and (min-width:1920px)
+{
+    .follow{
+        margin-left: 23rem;
+    }
+    footer hr{
+        margin: 0 350px;
+    }
+}
